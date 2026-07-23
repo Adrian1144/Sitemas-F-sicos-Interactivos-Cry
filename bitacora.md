@@ -10,27 +10,27 @@ let beat = stack(
 ).bank("RolandTr909")
 
 let bass = note("<c2 c2 f2 g2>")
-   .sound("sawtooth")
-   .lpf(400)
-   .sustain(0.3)
-   .gain(0.8)
+   .sound("sawtooth") //textura para el bajo
+   .lpf(400) //filtro para sonidos graves
+   .sustain(0.3) //el nivel del volumen en el que se mantiene sonando la nota
+   .gain(0.8) //la ganancia
 
 let harmony = chord("<Am7 F G G>")
-   .voicing()
-   .s("gm_epiano1")
-   .room(0.5)
+   .voicing() //convierte los simbolos en notas reales
+   .s("gm_epiano1") //sample de piano eléctrico
+   .room(0.5) //reverberación
    .gain(0.6)
 
 let melody = note("c4 e4 g4 ~ a3 ~ c4 d4 ~ e4 ~ g4 f4 ~ d4 ~")
    .sound("piano")
-   .legato(1)
+   .legato(1) //duración de la nota
    .gain(0.9)
 
 let effects = note("<c5 e5 f5 g5>")
    .sound("piano")
-   .delay(0.5)
-   .delaytime(0.375)
-   .delayfeedback(0.4)
+   .delay(0.5) //que tan fuerte es el delay
+   .delaytime(0.375) //tiempo entre repeticiones
+   .delayfeedback(0.4) //cuanto dura el delay antes de apagarse por completo
    .lpf(slider(1925.4, 300, 3000))
    .gain(0.85)
 
