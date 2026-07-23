@@ -1,6 +1,6 @@
 # Unidad 1
 ## Actividad entregable 1 - arreglo musical en strudel
-```
+```javascript
 setcpm(80/4)
 let beat = stack(
    s("oh").beat("5, 7, 11, 13", 16),
