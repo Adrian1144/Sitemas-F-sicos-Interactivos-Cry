@@ -46,7 +46,7 @@ $effects: effects
 
 # Unidad 3
 ## Actividad 3: Conexión Strudel-Touch
-```
+```javascript
 const { visualid } = createParams('visualid')
 
 setcpm(80/4)
